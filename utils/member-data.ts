@@ -1,7 +1,6 @@
-import { User } from '../interfaces'
+import { Member } from '../interfaces'
 
-/** Dummy user data. */
-export const sampleUserData: User[] = [
+export const MemberData: Member[] = [
   { id: 1, part: 'Gt.Vo', name: 'ペーター' },
   { id: 2, part: 'Gt', name: 'シムラ' },
   { id: 3, part: 'Dr', name: 'レイ' },

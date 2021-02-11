@@ -1,13 +1,13 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
-import { User } from '../../interfaces'
-import { sampleUserData } from '../../utils/sample-data'
+import { Member } from '../../interfaces'
+import { MemberData } from '../../utils/member-data'
 import Layout from '../../components/Layout'
 import List from '../../components/List'
 
 type Props = {
-  items: User[]
+  items: Member[]
 }
 
 const WithStaticProps = ({ items }: Props) => (
@@ -23,7 +23,7 @@ const WithStaticProps = ({ items }: Props) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const items: User[] = sampleUserData
+  const items: Member[] = MemberData
   return { props: { items } }
 }
 
