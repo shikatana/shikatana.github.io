@@ -6,5 +6,6 @@
 
 export type User = {
   id: number
+  part: string
   name: string
 }
